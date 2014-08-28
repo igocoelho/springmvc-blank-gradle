@@ -1,0 +1,14 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'eclipse-wtp'
+ 
+repositories {
+    mavenCentral()
+}
+ 
+dependencies {
+    testCompile 'junit:junit:4.9'
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
+    runtime 'javax.servlet:jstl:1.1.2'
+}
